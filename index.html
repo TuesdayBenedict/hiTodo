@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>hiTodo</title>
+</head>
+
+<body>
+    <div id="container">
+        <!-- heading -->
+        <h1 class="hitodo">hi<span class="todo">Todo</span></h1>
+
+        <!-- title -->
+        <input type="text" name="enter_title" id="enter_title" placeholder="Enter title">
+        <!-- todo input -->
+        <div class="todo_input">
+            <input type="text" name="enter_tod" id="enter_todo" placeholder="Enter todo">
+            <button type="submit" id="add_todo">Add +</button>
+        </div>
+
+        <!-- dotted colors -->
+        <div class="three_colors">
+            <div class="color"></div>
+            <div class="color color2"></div>
+            <div class="color color3"></div>
+        </div>
+
+        <!-- todo list -->
+        <div id="todo_list"></div>
+    </div>
+
+    <!-- Custom Alert Background  -->
+    <div id="alert_background"></div>
+
+    <!-- Delete Alert Container -->
+    <div id="deleteContainer">
+        <div class="heading">
+            <img src="icons/delete.svg" alt="delete icon" class="delete_icon">
+            <p class="delete_title">Confirm Delete</p>
+        </div>
+        <p class="delete_message">This action can't be undone.</p>
+        <div class="button_bar">
+            <button id="cancel_button" class="cancel_button">Cancel</button>
+            <button id="delete_button" class="delete_button">Delete</button>
+        </div>
+    </div>
+
+    <div class="todo_item"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
